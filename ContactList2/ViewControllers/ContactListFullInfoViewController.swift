@@ -9,7 +9,7 @@ import UIKit
 
 class ContactListFullInfoViewController: UITableViewController {
     
-    var contact = Person.getPerson()
+    var contactList = Person.getPerson()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,7 +24,7 @@ class ContactListFullInfoViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        contact.count
+        contactList.count
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -33,13 +33,25 @@ class ContactListFullInfoViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let contact = contactList[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactFullInfo", for: indexPath)
-
-        // Configure the cell...
-
+        var content = cell.defaultContentConfiguration()
+        
+        if indexPath.row == 0 {
+            content.text = contact.phoneNumber
+            content.image = UIImage(systemName: "phone")
+        } else {
+            content.text = contact.email
+            content.image = UIImage(systemName: "mail")
+        }
+        
+        cell.contentConfiguration = content
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        contactList[section].fullName
+    }
 
     /*
     // Override to support conditional editing of the table view.

@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="lbz-cn-XQc" id="fxk-FZ-qgr"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="PhC-Ow-7dz"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person" catalog="system" id="PhC-Ow-7dz"/>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Title" id="EqE-BD-fRb"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -148,12 +148,21 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactFullInfo" id="QUA-Dd-i5K">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="contactFullInfo" textLabel="Avg-fw-5KX" style="IBUITableViewCellStyleDefault" id="QUA-Dd-i5K">
                                 <rect key="frame" x="0.0" y="44.5" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QUA-Dd-i5K" id="3XF-PK-XC4">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Avg-fw-5KX">
+                                            <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -162,7 +171,7 @@
                             <outlet property="delegate" destination="bEL-98-qP5" id="88i-wv-X0J"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="hzv-Z5-dqg"/>
+                    <tabBarItem key="tabBarItem" title="Contacts" image="person.fill" catalog="system" id="hzv-Z5-dqg"/>
                     <navigationItem key="navigationItem" title="Root View Controller" id="Vyt-ba-Jgf"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Og5-UH-XvC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -187,9 +196,11 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Uhb-SX-ZnV"/>
+        <segue reference="eaY-8D-ZyO"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
