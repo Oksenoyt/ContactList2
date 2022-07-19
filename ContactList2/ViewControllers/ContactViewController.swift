@@ -8,7 +8,7 @@
 import UIKit
 
 class ContactViewController: UIViewController {
-
+    
     @IBOutlet var contactInformationLabels: [UILabel]!
     
     var contact: Person!
