@@ -62,11 +62,11 @@
 		4286EF522886C6A700D40A50 /* ContactList2 */ = {
 			isa = PBXGroup;
 			children = (
+				4286EF6C2886F6A600D40A50 /* ViewControllers */,
 				4286EF6E2886F6E000D40A50 /* Storyboards */,
-				4286EF6C2886F6A600D40A50 /* ViewContrillers */,
 				4286EF6B2886F69A00D40A50 /* Models */,
 				4286EF6D2886F6C800D40A50 /* App */,
-				4286EF5C2886C6A900D40A50 /* Assets.xcassets */,
+				4286EF732887214100D40A50 /* Resources */,
 				4286EF612886C6A900D40A50 /* Info.plist */,
 			);
 			path = ContactList2;
@@ -80,14 +80,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		4286EF6C2886F6A600D40A50 /* ViewContrillers */ = {
+		4286EF6C2886F6A600D40A50 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				4286EF672886C6EB00D40A50 /* ContactListViewController.swift */,
 				4286EF712887159200D40A50 /* ContactListFullInfoViewController.swift */,
 				4286EF6F288704FB00D40A50 /* ContactViewController.swift */,
 			);
-			path = ViewContrillers;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		4286EF6D2886F6C800D40A50 /* App */ = {
@@ -106,6 +106,14 @@
 				4286EF5E2886C6A900D40A50 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		4286EF732887214100D40A50 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4286EF5C2886C6A900D40A50 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

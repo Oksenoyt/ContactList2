@@ -17,23 +17,38 @@ struct Person {
         "\(firstName) \(secondName)"
     }
     
-    let dataStore = DataStore()
-    
     static func getPerson() -> [Person] {
         [
-//            Person(
-//                firstName: dataStore.firstName.randomElement() ?? "Имя отсутствует",
-//                secondName: dataStore.secondName.randomElement() ?? "Фамилия отсутствует",
-//                email: dataStore.email.randomElement() ?? " ",
-//                phoneNumber: dataStore.phoneNumber.randomElement() ?? " "
-//            ),
-            
-            Person (firstName: "1qwe", secondName: "asd", email: "`zxc", phoneNumber: "123123"),
-            Person (firstName: "2qwe", secondName: "asd", email: "`zxc", phoneNumber: "123123"),
-            Person (firstName: "3qwe", secondName: "asd", email: "`zxc", phoneNumber: "123123"),
-            Person (firstName: "4qwe", secondName: "asd", email: "`zxc", phoneNumber: "123123"),
-            Person (firstName: "5qwe", secondName: "asd", email: "`zxc", phoneNumber: "123123"),
-            Person (firstName: "6qwe", secondName: "asd", email: "`zxc", phoneNumber: "123123"),
+            Person(
+                firstName: DataStore().firstName.randomElement() ?? "Имя отсутствует",
+                secondName: DataStore().secondName.randomElement() ?? "Фамилия отсутствует",
+                email: DataStore().email.randomElement() ?? " ",
+                phoneNumber: DataStore().phoneNumber.randomElement() ?? " "
+            ),
+            Person(
+                firstName: DataStore().firstName.randomElement() ?? "Имя отсутствует",
+                secondName: DataStore().secondName.randomElement() ?? "Фамилия отсутствует",
+                email: DataStore().email.randomElement() ?? " ",
+                phoneNumber: DataStore().phoneNumber.randomElement() ?? " "
+            ),
+            Person(
+                firstName: DataStore().firstName.randomElement() ?? "Имя отсутствует",
+                secondName: DataStore().secondName.randomElement() ?? "Фамилия отсутствует",
+                email: DataStore().email.randomElement() ?? " ",
+                phoneNumber: DataStore().phoneNumber.randomElement() ?? " "
+            ),
+            Person(
+                firstName: DataStore().firstName.randomElement() ?? "Имя отсутствует",
+                secondName: DataStore().secondName.randomElement() ?? "Фамилия отсутствует",
+                email: DataStore().email.randomElement() ?? " ",
+                phoneNumber: DataStore().phoneNumber.randomElement() ?? " "
+            ),
+            Person(
+                firstName: DataStore().firstName.randomElement() ?? "Имя отсутствует",
+                secondName: DataStore().secondName.randomElement() ?? "Фамилия отсутствует",
+                email: DataStore().email.randomElement() ?? " ",
+                phoneNumber: DataStore().phoneNumber.randomElement() ?? " "
+            )
         ]
     }
 }
