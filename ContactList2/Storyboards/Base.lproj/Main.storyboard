@@ -182,7 +182,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="kNZ-u0-NHb">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.69411764710000001" green="0.81176470590000005" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="bEL-98-qP5" kind="relationship" relationship="rootViewController" id="Uhb-SX-ZnV"/>
@@ -194,7 +193,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="eaY-8D-ZyO"/>
+        <segue reference="Uhb-SX-ZnV"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="person" catalog="system" width="128" height="117"/>
