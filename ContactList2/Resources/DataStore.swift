@@ -33,7 +33,11 @@ class DataStore {
         "5@gmail.com",
         "6@gmail.com",
         "7@gmail.com",
-        "8@gmail.com"
+        "8@gmail.com",
+        "9@gmail.com",
+        "10@gmail.com",
+        "11@gmail.com",
+        "12@gmail.com"
     ]
     let phoneNumber = [
         "+79139219351",
@@ -43,6 +47,10 @@ class DataStore {
         "+79135319355",
         "+79131219356",
         "+73239219357",
-        "+74339219358"
+        "+74339219358",
+        "+73239219359",
+        "+74339219360",
+        "+73239219361",
+        "+74339219362"
     ]
 }
