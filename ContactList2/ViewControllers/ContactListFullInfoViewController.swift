@@ -21,15 +21,15 @@ class ContactListFullInfoViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let contact = contactList[indexPath.row]
+        let contact = contactList.randomElement()
         let cell = tableView.dequeueReusableCell(withIdentifier: "contactFullInfo", for: indexPath)
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
-            content.text = contact.phoneNumber
+            content.text = contact?.phoneNumber
             content.image = UIImage(systemName: "phone")
         } else {
-            content.text = contact.email
+            content.text = contact?.email
             content.image = UIImage(systemName: "mail")
         }
         
