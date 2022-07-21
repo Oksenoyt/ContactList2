@@ -5,7 +5,7 @@
 //  Created by Elenka on 20.07.2022.
 //
 class DataStore {
-    let firstName = [
+    var firstNames = [
         "Emily",
         "Taylor",
         "Kaitlyn",
@@ -15,7 +15,7 @@ class DataStore {
         "Alissa",
         "Ashley"
     ]
-    let secondName = [
+    var secondNames = [
         "Abramson",
         "James",
         "Aldridge",
@@ -25,7 +25,7 @@ class DataStore {
         "Leman",
         "Mercer"
     ]
-    let email = [
+    var emails = [
         "1@gmail.com",
         "2@gmail.com",
         "3@gmail.com",
@@ -34,12 +34,8 @@ class DataStore {
         "6@gmail.com",
         "7@gmail.com",
         "8@gmail.com",
-        "9@gmail.com",
-        "10@gmail.com",
-        "11@gmail.com",
-        "12@gmail.com"
     ]
-    let phoneNumber = [
+    var phoneNumbers = [
         "+79139219351",
         "+79132319352",
         "+79139459353",
@@ -48,9 +44,5 @@ class DataStore {
         "+79131219356",
         "+73239219357",
         "+74339219358",
-        "+73239219359",
-        "+74339219360",
-        "+73239219361",
-        "+74339219362"
     ]
 }

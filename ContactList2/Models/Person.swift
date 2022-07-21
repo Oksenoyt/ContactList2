@@ -16,14 +16,22 @@ struct Person {
     
     static func getPerson() -> [Person] {
         var person: [Person] = []
+        let data = DataStore()
         
-        for name in DataStore().firstName {
+        data.firstNames.shuffle()
+        data.secondNames.shuffle()
+        data.emails.shuffle()
+        data.phoneNumbers.shuffle()
+        
+        for name  in data.firstNames {
+            let index = data.firstNames.firstIndex(of: name)!
+            
             person.append(
                 Person(
                     firstName: name,
-                    secondName: DataStore().secondName.randomElement() ?? "no data",
-                    email: DataStore().email.randomElement() ?? " ",
-                    phoneNumber: DataStore().phoneNumber.randomElement() ?? " "
+                    secondName: data.secondNames[index],
+                    email: data.emails[index],
+                    phoneNumber: data.phoneNumbers[index]
                 )
             )
         }
