@@ -9,7 +9,7 @@ import UIKit
 
 class ContactListFullInfoViewController: UITableViewController {
     
-    let contactList = Person.getPersonList()()
+    var contactList: [Person] = []
     
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -117,7 +117,7 @@
         <!--Contact List-->
         <scene sceneID="SIH-3c-eIh">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="saC-NW-0bu" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="saC-NW-0bu" customClass="TabBarController" customModule="ContactList2" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Contact List" id="OXY-M7-qgA"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rIX-bB-06L">

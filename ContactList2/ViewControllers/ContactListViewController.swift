@@ -9,11 +9,11 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     
-    var contactLists: [Person]!
+    var contactLists: [Person] = []
     
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        contactLists?.count ?? 0
+        contactLists.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -30,6 +30,5 @@ class ContactListViewController: UITableViewController {
         guard let contactVC = segue.destination as? ContactViewController else { return }
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
         contactVC.contact = contactLists[indexPath.row]
-        
     }
 }

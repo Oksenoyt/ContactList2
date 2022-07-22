@@ -8,11 +8,19 @@
 import UIKit
 
 class TabBarController: UITabBarController {
-    let contactLists = Person.getPersonList()()
     
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let contactListVC = segue.destination as? ContactListViewController else { return }
-        contactListVC.contactLists = contactLists
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViewControllers()
+    }
+    
+    private func setupViewControllers() {
+        guard let contactListVC = viewControllers?.first as? ContactListViewController else { return }
+        guard let contactListFullInfoVC = viewControllers?.last as? ContactListFullInfoViewController else { return }
+        
+        let persons = Person.getPersonList()
+        
+        contactListVC.contactLists = persons
+        contactListFullInfoVC.contactList = persons
     }
 }
