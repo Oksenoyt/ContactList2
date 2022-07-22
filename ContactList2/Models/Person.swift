@@ -4,6 +4,9 @@
 //
 //  Created by Elenka on 19.07.2022.
 //
+
+import Foundation
+
 struct Person {
     let firstName: String
     let secondName: String
@@ -14,28 +17,31 @@ struct Person {
         "\(firstName) \(secondName)"
     }
     
-    static func getPerson() -> [Person] {
-        var person: [Person] = []
-        let data = DataStore()
+    static func getPersonList() -> [Person] {
+        var persons: [Person] = []
         
-        data.firstNames.shuffle()
-        data.secondNames.shuffle()
-        data.emails.shuffle()
-        data.phoneNumbers.shuffle()
+        let names = DataStore.shared.firstNames.shuffled()
+        let surnames = DataStore.shared.secondNames.shuffled()
+        let emails = DataStore.shared.emails.shuffled()
+        let phoneNumbers = DataStore.shared.phoneNumbers.shuffled()
         
-        for name  in data.firstNames {
-            let index = data.firstNames.firstIndex(of: name)!
-            
-            person.append(
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            emails.count,
+            phoneNumbers.count
+        )
+        
+        for index  in 0..<iterationCount {
+            persons.append(
                 Person(
-                    firstName: name,
-                    secondName: data.secondNames[index],
-                    email: data.emails[index],
-                    phoneNumber: data.phoneNumbers[index]
+                    firstName: names[index],
+                    secondName: surnames[index],
+                    email: emails[index],
+                    phoneNumber: phoneNumbers[index]
                 )
             )
         }
-        return person
+        return persons
     }
-    
 }
